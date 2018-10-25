@@ -26,10 +26,12 @@ nav ul {
 }
 
 nav li {
+  width: 100%;
   border-radius: 2px;
 }
 
 nav a {
+  width: 100%;
   display: block;
   padding: 5px;
   text-decoration: none;
@@ -37,7 +39,7 @@ nav a {
 }
 
 nav li:hover {
-  background-color: rgba(0, 205, 255, 0.5);
+  background-color: rgba(0, 205, 255, 0.1);
 }
 
 .hidden {
