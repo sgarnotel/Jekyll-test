@@ -29,7 +29,7 @@ $
 
 ### 2D
 
-```freefem
+{% highlight cpp %}
 // Parameters
 func f = 1.;
 
@@ -61,11 +61,11 @@ u[] = Laplacian^-1 * LaplacianBoundary;
 
 // Plot
 plot(u, nbiso=30, fill=true, value=true, cmm="A");
-```
+{% endhighlight %}
 
 ### 3D
 
-```freefem
+{% highlight cpp %}
 include "cube.idp"
 
 // Parameters
@@ -99,4 +99,4 @@ u[] = Laplacian^-1 * LaplacianBoundary;
 
 // Plot
 plot(u, nbiso=30, fill=true, value=true, cmm="A");
-```
+{% endhighlight %}
