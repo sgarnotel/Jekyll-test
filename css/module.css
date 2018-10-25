@@ -40,6 +40,10 @@ nav li:hover {
   background-color: rgba(0, 205, 255, 0.5);
 }
 
+.hidden {
+  display: none;
+}
+
 .collectionArea {
   margin: auto;
   width: 90%;

@@ -6,14 +6,15 @@
     {% include search.html %}
   </div>
 
-  <ul>
+  <ul id="menu">
     <li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-  {% for module in site.modules %}
+    {% for module in site.modules %}
     <li>
       <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}">
         {{ module.name }}
       </a>
+      <span class="hidden">{{ module.category }}</span>
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
 </nav>

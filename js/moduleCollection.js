@@ -13,8 +13,13 @@ onCollectionChange = (collection, checked) => {
 }
 
 function toogleCollections() {
-  for (let i = 0; i < modulesList.children.length; i++) {
-    const module = modulesList.children[i].children[0]
+  for (let i = 0; i < menu.children.length; i++) {
+    const module = menu.children[i]
+    if (module.children[0].innerHTML.includes("Home")) {
+      module.style.display = 'flex'
+      continue
+    }
+
     let category = module.children[1].innerHTML
     category = category.toLowerCase()
 
