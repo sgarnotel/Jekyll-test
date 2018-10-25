@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   </head>
   <body>
-    {{ site.source }}
+    url {{ site.url }}
+    baseurl {{ site.baseurl }}
+
     {% include header.html %}
 
     <div class="container">
