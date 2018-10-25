@@ -3,14 +3,15 @@
   <head>
     {% include html_mathjax %}
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="./css/html.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/collection.css" />
+    <link rel="stylesheet" href="/css/html.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/collection.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   </head>
   <body>
+    {{ site.url }}
     {% include header.html %}
 
     <div class="container">

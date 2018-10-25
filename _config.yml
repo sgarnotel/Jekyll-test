@@ -4,7 +4,7 @@ description: "A collection of validated and esay-to-use modules for FreeFem++"
 
 markdown: kramdown
 
-include: ["./_modules"]
+include: ["_modules"]
 
 collections:
     modules:
