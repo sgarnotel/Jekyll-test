@@ -2,11 +2,9 @@ title: "FreeFem++ modules"
 subtitle: "A collection of validated and esay-to-use modules for FreeFem++"
 description: "A collection of validated and esay-to-use modules for FreeFem++"
 
-markdown: redcarpet
+markdown: kramdown
 
-highlighter: pygments
-
-include: ["_modules"]
+include: ["./_modules"]
 
 collections:
     modules:
