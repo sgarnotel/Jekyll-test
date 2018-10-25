@@ -30,7 +30,7 @@
         {% for module in site.modules %}
           <div class="module">
             <div class="moduleName">
-              <a href="{{ module.url}}">
+              <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}">
                 {{ module.name }}
               </a>
             </div>

@@ -3,7 +3,7 @@
     <li><a href="/">Home</a></li>
   {% for module in site.modules %}
     <li>
-      <a href="{{ module.url}}">
+      <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}">
         {{ module.name }}
       </a>
     </li>
