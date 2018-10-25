@@ -3,12 +3,45 @@
   <head>
     {% include html_mathjax %}
     <title>{{page.title}}</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/html.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/collection.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   </head>
   <body>
     {% include header.html %}
 
-    {{ content }}
+    <div class="container">
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <div class="collectionArea">
+        {% include collection.html %}
+      </div>
+
+      <div class="searchArea">
+        {% include search.html %}
+      </div>
+
+      <div class="modulesList">
+        {% for module in site.posts %}
+          <div class="module">
+            <div class="moduleName">
+              <a href="{{ module.url}}">
+                {{ module.name }}
+              </a>
+            </div>
+            <div class="moduleCategoryAndTags">
+              {{module.category}}
+              {{module.tags}}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
 
     {% include footer.html %}
   </body>

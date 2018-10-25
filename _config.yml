@@ -1,7 +1,7 @@
-title: FreeFem++ modules
+title: "FreeFem++ modules"
 subtitle: "A collection of validated and esay-to-use modules for FreeFem++"
-description: >-
-  FreeFem++ modules
+description: "A collection of validated and esay-to-use modules for FreeFem++"
 
-# Build settings
-markdown: kramdown
+markdown: redcarpet
+
+highlighter: pygments

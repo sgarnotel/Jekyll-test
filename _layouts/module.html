@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include html_mathjax %}
+    <title>{{site.title}} - {{page.name}}</title>
+    <link rel="stylesheet" href="/css/html.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/module.css" />
+  </head>
+  <body>
+    {% include header.html %}
+
+    <div class="container">
+      {% include nav.html %}
+
+      <div class="author">
+      Author: {{ page.author }}
+      </div>
+
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
