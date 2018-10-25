@@ -26,7 +26,7 @@ $
 
 ### 2D
 
-```freefem
+{% highlight freefem %}
 //Parameters
 real Rho = 8000.;		//Density
 real E = 210.e9;		//Young modulus
@@ -86,11 +86,11 @@ Th = movemesh(Th, [x+ux, y+uy]);
 
 //Plot
 plot([ux, uy], value=true, cmm="u");
-```
+{% endhighlight %}
 
 ### 3D
 
-```freefem
+{% highlight freefem %}
 load "gmsh"
 load "msh3"
 
@@ -149,13 +149,13 @@ Th = movemesh(Th, [x+ux, y+uy, z+uz]);
 
 //Plot
 plot([ux, uy, uz], value=true, cmm="u");
-```
+{% endhighlight %}
 
 ### Optional
 
 Gmsh script:
 
-```gmsh
+{% highlight gmsh %}
 Mesh.Optimize = 1;
 
 ////////////////
@@ -236,4 +236,4 @@ Physical Surface("Free", Free) = {s+2, s+3, s+4, s+5};
 
 //Volumes
 Physical Volume("Volume", 1) = {v+0};
-```
+{% endhighlight %}

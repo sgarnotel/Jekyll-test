@@ -29,7 +29,7 @@ $
 
 ### 2D
 
-```cpp
+{% highlight freefem %}
 //Parameters
 real uMax = 10.;
 
@@ -94,11 +94,11 @@ S;
 //Plot
 plot(p, cmm="Pressure");
 plot([ux, uy], cmm="Velocity");
-```
+{% endhighlight %}
 
 ### 3D
 
-```freefem
+{% highlight freefem %}
 load "msh3"
 
 //Parameters
@@ -119,10 +119,10 @@ int Inlet = 2;	//Pipe inlet label
 int Outlet = 3;	//Pipe outlet label
 
 real R = D/2.;
-border b0(t=0., 2.*pi){x=R*cos(t); y=R*sin(t); label=0;};
+border b0(t=0., 2*pi){x=R*cos(t); y=R*sin(t); label=0;};
 
 int nnL = max(2., L*nn);
-int nnR = max(2., 2.*pi*R*nn);
+int nnR = max(2., 2*pi*R*nn);
 
 mesh Th0 = buildmesh(b0(nnR));
 
@@ -170,4 +170,4 @@ S;
 //Plot
 plot(p, cmm="Presure");
 plot([ux, uy, uz], cmm="Velocity");
-```
+{% endhighlight %}
