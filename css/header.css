@@ -27,4 +27,5 @@ header h1 {
 header h2 {
   margin: 0;
   padding: 10px;
+  font-weight: normal;
 }

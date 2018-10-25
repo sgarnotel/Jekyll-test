@@ -1,27 +1,37 @@
 <div class="collection">
   <label class="collectionContainer">
     Academic
-    <input type="checkbox" />
+    <input type="checkbox" checked id="academic" onChange="onCollectionChange(this.id, event.target.checked);" />
     <span class="collectionCheckmark"></span>
   </label>
   <label class="collectionContainer">
     Fluid
-    <input type="checkbox" />
+    <input type="checkbox" checked id="fluid" onChange="onCollectionChange(this.id, event.target.checked);" />
     <span class="collectionCheckmark"></span>
   </label>
   <label class="collectionContainer">
     Solid
-    <input type="checkbox" />
+    <input type="checkbox" checked id="solid" onChange="onCollectionChange(this.id, event.target.checked);" />
     <span class="collectionCheckmark"></span>
   </label>
   <label class="collectionContainer">
     Electromagnetism
-    <input type="checkbox" />
+    <input type="checkbox" checked id="electromagnetism" onChange="onCollectionChange(this.id, event.target.checked);" />
     <span class="collectionCheckmark"></span>
   </label>
   <label class="collectionContainer">
     Coupled
-    <input type="checkbox" />
+    <input type="checkbox" checked id="coupled" onChange="onCollectionChange(this.id, event.target.checked);" />
     <span class="collectionCheckmark"></span>
   </label>
 </div>
+
+<script>
+collections = [
+  "academic",
+  "fluid",
+  "solid",
+  "electromagnetism",
+  "coupled"
+]
+</script>

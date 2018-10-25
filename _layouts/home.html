@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/footer.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/home.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/collection.css" />
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/search.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/favicon.png"/>
   </head>
@@ -27,23 +28,25 @@
         {% include search.html %}
       </div>
 
-      <div class="modulesList">
+      <div class="modulesList" id="modulesList">
         {% for module in site.modules %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}">
           <div class="module">
             <div class="moduleName">
-              <a href="{{ site.url }}{{ site.baseurl }}{{ module.url}}">
-                {{ module.name }}
-              </a>
+              {{ module.name }}
             </div>
-            <div class="moduleCategoryAndTags">
+            <div class="moduleCategory">
               {{module.category}}
-              {{module.tags}}
             </div>
           </div>
+        </a>
         {% endfor %}
       </div>
     </div>
 
     {% include footer.html %}
+
+    <script src="{{ site.url }}{{ site.baseurl }}/js/homeSearch.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/homeCollection.js"></script>
   </body>
 </html>

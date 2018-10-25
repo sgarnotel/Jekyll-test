@@ -40,6 +40,16 @@ nav li:hover {
   background-color: rgba(0, 205, 255, 0.5);
 }
 
+.collectionArea {
+  margin: auto;
+  width: 90%;
+}
+
+.searchArea {
+  margin: auto;
+  width: 90%;
+}
+
 .author {
   position: absolute;
   top: 10px;
