@@ -74,3 +74,12 @@ nav li:hover {
   font-weight: normal;
   background-color: rgba(0, 205, 255, 0.1);
 }
+
+.copyPasteButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  border-radius: 2px;
+  background: none;
+}

@@ -26,7 +26,7 @@ $
 
 ### 2D
 
-{% highlight freefem %}
+{% highlight cpp %}
 //Parameters
 real Rho = 8000.;		//Density
 real E = 210.e9;		//Young modulus
@@ -90,7 +90,7 @@ plot([ux, uy], value=true, cmm="u");
 
 ### 3D
 
-{% highlight freefem %}
+{% highlight cpp %}
 load "gmsh"
 load "msh3"
 
@@ -155,7 +155,7 @@ plot([ux, uy, uz], value=true, cmm="u");
 
 Gmsh script:
 
-{% highlight gmsh %}
+{% highlight cpp %}
 Mesh.Optimize = 1;
 
 ////////////////

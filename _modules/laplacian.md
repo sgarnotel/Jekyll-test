@@ -29,7 +29,7 @@ $
 
 ### 2D
 
-{% highlight freefem %}
+{% highlight cpp %}
 // Parameters
 func f = 1.;
 
@@ -65,7 +65,7 @@ plot(u, nbiso=30, fill=true, value=true, cmm="A");
 
 ### 3D
 
-{% highlight freefem %}
+{% highlight cpp %}
 include "cube.idp"
 
 // Parameters
