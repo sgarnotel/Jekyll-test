@@ -3,6 +3,7 @@ name: Laplacian
 category: academic
 layout: module
 author: Simon Garnotel
+authorURL: https://github.com/sgarnotel
 ---
 
 # Laplacian

@@ -15,7 +15,14 @@
       {% include nav.html %}
 
       <div class="author">
-      Author: {{ page.author }}
+        Author:
+        {% if page.authorURL %}
+        <a href="{{ page.authorURL }}" target="_blank">
+        {% endif %}
+          {{ page.author }}
+        {% if page.authorURL %}
+        </a>
+        {% endif %}
       </div>
 
       <div class="content">

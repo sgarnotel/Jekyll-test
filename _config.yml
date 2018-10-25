@@ -5,3 +5,10 @@ description: "A collection of validated and esay-to-use modules for FreeFem++"
 markdown: redcarpet
 
 highlighter: pygments
+
+include: ["_modules"]
+
+collections:
+    modules:
+      output: true
+      permalink: /:collection/:path/
