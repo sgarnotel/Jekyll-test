@@ -28,9 +28,6 @@ function copyPasteCode(code, button) {
 
 for (let i = 0; i < codeBlocks.length; i++) {
   // Copy / Paste button
-  let img = document.createElement('img')
-  img.alt = 'copy'
-  img.src = '../../assets/copy.svg'
   var p = document.createElement('p')
   var node = document.createTextNode('copy')
   p.appendChild(node);
