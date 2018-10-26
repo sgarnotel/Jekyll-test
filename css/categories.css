@@ -25,31 +25,91 @@
     white-space: nowrap;
 }
 
-.light--academic {
+.light-1 {
     background-color: #ffdd57;
     color: #310736;
     opacity: 1;
 }
 
-.light--fluid {
+.light-2 {
     background-color: #d7ffab;
     color: #310736;
     opacity: 1;
 }
 
-.light--solid {
+.light-3 {
     background-color: #ffbfb7;
     color: #310736;
     opacity: 1;
 }
 
-.light--electromagnetism {
+.light-4 {
     background-color: #ffa987;
     color: #310736;
     opacity: 1;
 }
 
-.light--coupled {
+.light-5 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-6 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-7 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-8 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-9 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-10 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-11 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-12 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-13 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-14 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
+.light-15 {
     background-color: rgba(50,115,220,0.29);
     color: #310736;
     opacity: 1;
