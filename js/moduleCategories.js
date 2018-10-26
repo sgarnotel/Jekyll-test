@@ -1,4 +1,24 @@
-toogleCategories()
+categories = []
+
+addToCategories = (item) => {
+  addCategory(item)
+  categories.push(item)
+  toogleCategories()
+}
+
+addCategory = (item) => {
+  const label = document.createElement('label')
+  label.className = 'light light-' + categories.length
+  label.innerHTML = item
+  const input = document.createElement('input')
+  input.type = 'checkbox'
+  input.checked = true
+  input.id = item
+  input.onchange = function() { onCategoryChange(item, input.checked) }
+  label.appendChild(input)
+
+  categoriesDiv.appendChild(label)
+}
 
 onCategoryChange = (category, checked) => {
   if (checked) {
@@ -9,10 +29,10 @@ onCategoryChange = (category, checked) => {
       categories.splice(index, 1)
   }
 
-  tooglecategories()
+  toogleCategories()
 }
 
-function toogleCategories() {
+toogleCategories = () => {
   for (let i = 0; i < menu.children.length; i++) {
     const module = menu.children[i]
     if (module.children[0].innerHTML.includes("Home")) {
