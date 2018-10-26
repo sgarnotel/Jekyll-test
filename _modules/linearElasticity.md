@@ -16,15 +16,27 @@ $
 \displaystyle{todo}
 $
 
+With:
+
+$
+\displaystyle{
+	\mu = \frac{E}{2(1+\nu)} ;\ \lambda = \frac{E\nu}{(1+\nu)(1-2\nu)}
+}
+$
+
 ## Variational form
 
 $
-\displaystyle{todo}
+\displaystyle{
+	\int_{\Omega}{\lambda\nabla\cdot\mathbf{u}\nabla\cdot\mathbf{v} + 2\mu\varepsilon(\mathbf{u})} - \int_{\Omega}{\mathbf{f}\cdot\mathbf{v}}
+}
 $
 
 ## Algorithms
 
 ### 2D
+
+Elasticity equation on a beam.
 
 {% highlight cpp %}
 //Parameters
@@ -89,6 +101,8 @@ plot([ux, uy], value=true, cmm="u");
 {% endhighlight %}
 
 ### 3D
+
+Elasticity equation on a beam.
 
 {% highlight cpp %}
 load "gmsh"

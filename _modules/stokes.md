@@ -22,7 +22,23 @@ $
 ## Variational form
 
 $
-\displaystyle{todo}
+\displaystyle{
+	\mu\int_{\Omega}{\nabla\mathbf{u}:\nabla\mathbf{v} - p\nabla\cdot\mathbf{v}} - \int_{\partial\Omega}{\left(\nu\frac{\partial\mathbf{u}}{\partial\mathbf{n}}-p\mathbf{n}\right)\cdot\mathbf{v}} = \int_{\Omega}{\mathbf{f}\cdot\mathbf{v}}
+}
+$
+
+$
+\displaystyle{
+	\int_{\Omega}{\nabla\cdot\mathbf{u}q} = 0
+}
+$
+
+Stabilisation term:
+
+$
+\displaystyle {
+	\int_{\Omega}{\varepsilon p q}
+}
 $
 
 ## Algorithms
