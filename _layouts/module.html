@@ -19,18 +19,19 @@
     <div class="container">
       {% include nav.html %}
 
-      <div class="author">
-        Author:
-        {% if page.authorURL %}
-        <a href="{{ page.authorURL }}" target="_blank">
-        {% endif %}
-          {{ page.author }}
-        {% if page.authorURL %}
-        </a>
-        {% endif %}
-      </div>
+
 
       <div class="content">
+        <div class="author">
+          Author:
+          {% if page.authorURL %}
+          <a href="{{ page.authorURL }}" target="_blank">
+          {% endif %}
+            {{ page.author }}
+          {% if page.authorURL %}
+          </a>
+          {% endif %}
+        </div>
         {{ content }}
       </div>
     </div>
