@@ -79,7 +79,10 @@ nav li:hover {
   position: absolute;
   top: 0;
   right: 0;
-  border: 1px solid black;
+  border: 0px solid black;
   border-radius: 2px;
-  background: none;
+  padding: 6px 6px;
+  background-color: #084887;
+  font-size: 1em;
+  color: #f9ab55;
 }
