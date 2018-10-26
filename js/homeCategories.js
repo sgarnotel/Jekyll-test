@@ -1,9 +1,12 @@
 categories = []
 
 addToCategories = (item) => {
+  const index = categories.indexOf(item)
+  if (index > -1)
+    return
+    
   addCategory(item)
   categories.push(item)
-  toogleCategories()
 }
 
 addCategory = (item) => {
@@ -48,5 +51,16 @@ toogleCategories = () => {
       module.style.display = 'flex'
     else
       module.style.display = 'none'
+  }
+}
+
+colorCategories = () => {
+  const modules = document.getElementsByClassName('moduleCategory')
+  
+  for (let i = 0; i < modules.length; i++) {
+    let text = modules[i].innerHTML
+    text = text.replace(/\s/g, '')
+    const index = categories.indexOf(text)
+    modules[i].className += ' light-'+index
   }
 }

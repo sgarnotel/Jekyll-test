@@ -37,18 +37,22 @@
             <div class="moduleName">
               {{ module.name }}
             </div>
-            <div class="moduleCategory light-{{ forloop.index0 }}">
+            <div class="moduleCategory light">
               {{module.category}}
             </div>
+            <script>
+              addToCategories('{{module.category}}')
+            </script>
           </div>
-          <script>
-            addToCategories('{{module.category}}')
-          </script>
         </a>
         {% endfor %}
       </div>
     </div>
 
     {% include footer.html %}
+    
+    <script>
+      colorCategories()
+    </script>
   </body>
 </html>

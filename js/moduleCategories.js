@@ -1,9 +1,12 @@
 categories = []
 
 addToCategories = (item) => {
+  const index = categories.indexOf(item)
+  if (index > -1)
+    return
+    
   addCategory(item)
   categories.push(item)
-  toogleCategories()
 }
 
 addCategory = (item) => {
