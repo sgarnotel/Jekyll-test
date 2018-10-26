@@ -25,6 +25,12 @@
     white-space: nowrap;
 }
 
+.light-0 {
+    background-color: rgba(50,115,220,0.29);
+    color: #310736;
+    opacity: 1;
+}
+
 .light-1 {
     background-color: #ffdd57;
     color: #310736;
@@ -104,12 +110,6 @@
 }
 
 .light-14 {
-    background-color: rgba(50,115,220,0.29);
-    color: #310736;
-    opacity: 1;
-}
-
-.light-15 {
     background-color: rgba(50,115,220,0.29);
     color: #310736;
     opacity: 1;
