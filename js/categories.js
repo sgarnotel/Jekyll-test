@@ -7,7 +7,7 @@ addToCategories = (item) => {
 
 addCategory = (item) => {
   const label = document.createElement('label')
-  label.className = 'light light-' + item
+  label.className = 'light light-' + categories.length
   label.innerHTML = item
   const input = document.createElement('input')
   input.type = 'checkbox'
