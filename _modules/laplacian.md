@@ -12,22 +12,34 @@ Algorithms for solving the 2D and 3D Laplace equation
 
 ## Problem
 
-Solve:
+Let $u\in\mathbb{R}$, solve:
 
 $
--\displaystyle{\Delta\mathbf{u} = f}
+-\displaystyle{\Delta u = f}
 $
+
+With $f$ an external force.
 
 ## Variational form
 
+Let $\Omega\in\mathbb{R}^n$, $2\leq n\leq3$. Let $u, v\in H^1(\Omega)$. The variational form reads as follow:
+
 $
-\displaystyle{\int_{\Omega}{\nabla \mathbf{u} \cdot \nabla \mathbf{v}} - \int_{\Omega}{\mathbf{f} \cdot \mathbf{v}} = 0}
+\displaystyle{-\int_{\Omega}{\Delta u v} - \int_{\Omega}{f v} = 0}
+$
+
+Using the Green formula:
+
+$
+\displaystyle{\int_{\Omega}{\nabla u \cdot \nabla v} - \int_{\Omega}{f v} = 0}
 $
 
 
 ## Algorithms
 
 ### 2D
+
+Laplacian equation on a square.
 
 {% highlight cpp %}
 // Parameters
@@ -64,6 +76,8 @@ plot(u, nbiso=30, fill=true, value=true, cmm="A");
 {% endhighlight %}
 
 ### 3D
+
+Laplacian equation on a cube.
 
 {% highlight cpp %}
 include "cube.idp"
