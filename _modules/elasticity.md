@@ -1,12 +1,12 @@
 ---
-name: Linear Elasticity
+name: Elasticity
 category: solid
 layout: module
 author: Simon Garnotel
 authorURL: https://github.com/sgarnotel
 ---
 
-# Linear Elasticity
+# Elasticity
 
 Algorithms for solving the 2D and 3D static linear elasticity equations
 
