@@ -2,7 +2,7 @@ onSearch = (event) => {
   let text = event.target.value
 
   if (text.length === 0) {
-    toogleCollections()
+    toogleCategories()
     return
   }
 

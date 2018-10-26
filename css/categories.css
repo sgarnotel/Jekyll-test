@@ -1,4 +1,4 @@
-.collection {
+.categories {
   margin: 5px;
   padding: 0;
   width: 100%;
@@ -9,7 +9,7 @@
 
 /* Customize the label (the container) */
 
-.collection .light {
+.categories .light {
     margin-right: 4px;
 }
 
@@ -55,7 +55,7 @@
     opacity: 1;
 }
 
-.collectionContainer {
+.categoryContainer {
   display: block;
   position: relative;
   padding-right: 5px;
@@ -68,7 +68,7 @@
 }
 
 /* Hide the browser's default checkbox */
-.collectionContainer input {
+.categoryContainer input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -77,7 +77,7 @@
 }
 
 /* Create a custom checkbox */
-.collectionCheckmark {
+.categoryCheckmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -87,29 +87,29 @@
 }
 
 /* On mouse-over, add a grey background color */
-.collectionContainer:hover input ~ .collectionCheckmark {
+.categoryContainer:hover input ~ .categoryCheckmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.collectionContainer input:checked ~ .collectionCheckmark {
+.categoryContainer input:checked ~ .categoryCheckmark {
   background-color: #0CF;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.collectionCheckmark:after {
+.categoryCheckmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
 /* Show the checkmark when checked */
-.collectionContainer input:checked ~ .collectionCheckmark:after {
+.categoryContainer input:checked ~ .categoryCheckmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.collectionContainer .collectionCheckmark:after {
+.categoryContainer .categoryCheckmark:after {
   left: 5px;
   top: 5px;
   width: 5px;

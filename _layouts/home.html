@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/header.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/footer.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/home.css" />
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/collection.css" />
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/categories.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/search.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/favicon.png"/>
-    <script src="{{ site.url }}{{ site.baseurl }}/js/collection.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/categories.js"></script>
   </head>
   <body>
     {% include header.html %}
@@ -21,8 +21,8 @@
         {{ content }}
       </div>
 
-      <div class="collectionArea">
-        {% include collection.html %}
+      <div class="categoriesArea">
+        {% include categories.html %}
       </div>
 
       <div class="searchArea">
@@ -41,7 +41,7 @@
             </div>
           </div>
           <script>
-            addToCollection('{{module.category}}')
+            addToCategories('{{module.category}}')
           </script>
         </a>
         {% endfor %}
@@ -51,6 +51,6 @@
     {% include footer.html %}
 
     <script src="{{ site.url }}{{ site.baseurl }}/js/homeSearch.js"></script>
-    <script src="{{ site.url }}{{ site.baseurl }}/js/homeCollection.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/homeCategories.js"></script>
   </body>
 </html>
