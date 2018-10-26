@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/search.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="{{ site.url }}{{ site.baseurl }}/favicon.png"/>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/collection.js"></script>
   </head>
   <body>
     {% include header.html %}
@@ -35,10 +36,13 @@
             <div class="moduleName">
               {{ module.name }}
             </div>
-            <div class="moduleCategory">
+            <div class="moduleCategory light--{{module.category}}">
               {{module.category}}
             </div>
           </div>
+          <script>
+            addToCollection('{{module.category}}')
+          </script>
         </a>
         {% endfor %}
       </div>
