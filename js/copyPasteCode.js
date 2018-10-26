@@ -31,9 +31,13 @@ for (let i = 0; i < codeBlocks.length; i++) {
   let img = document.createElement('img')
   img.alt = 'copy'
   img.src = '../../assets/copy.svg'
+  var p = document.createElement('p')
+  var node = document.createTextNode('copy')
+  p.appendChild(node);
+
   let button = document.createElement('button')
   button.className = 'copyPasteButton'
-  button.appendChild(img)
+  button.appendChild(p)
   button.onclick = function() { copyPasteCode(codeBlocks[i], button) }
 
   // Add button
